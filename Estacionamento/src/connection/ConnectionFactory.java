@@ -40,7 +40,8 @@ public static void closeConnection(Connection con){
     }
 
 public static void closeConnection(Connection con, PreparedStatement stmt){
-    
+    closeConnection(con);
+     
     try{
         
         if(con != null){
@@ -54,7 +55,8 @@ public static void closeConnection(Connection con, PreparedStatement stmt){
     
         }
 
-  public static void closeConnection(Connection con, PreparedStatement stmt){
+  public static void closeConnection(Connection con, PreparedStatement stmt, ResultSet rs){
+      closeConnection(con, stmt);
     
     try{
         
