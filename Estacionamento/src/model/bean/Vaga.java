@@ -3,7 +3,7 @@ package model.bean;
 
 public class Vaga {
         
-    private int idVaga;
+    private int idVaga; 
     private int numero;
     private String rua;
     private boolean obliqua;

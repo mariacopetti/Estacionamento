@@ -6,7 +6,7 @@
 package view;
 
 /**
- *
+ * 
  * @author 03364382069
  */
 public class JFCadastrarVaga extends javax.swing.JFrame {

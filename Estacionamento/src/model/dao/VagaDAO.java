@@ -2,9 +2,10 @@ package model.dao;
 
 import model.bean.Vaga;
 import connection.ConnectionFactory;
-import java.sql.Connection;
-import java.sql.SQLException;
+import java.sql.Connection; 
+import java.sql.SQLException; 
 import java.sql.PreparedStatement;
+
 import connection.ConnectionFactory;
 import javax.swing.JOptionPane;
 
