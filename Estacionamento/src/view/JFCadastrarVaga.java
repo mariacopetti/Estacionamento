@@ -199,7 +199,7 @@ public class JFCadastrarVaga extends javax.swing.JFrame {
      Vaga v = new Vaga();
      VagaDAO dao = new VagaDAO(); 
      v.setNumero(Integer.parseInt(jTFNumero.getText()));
-      v.setRua(jTFRua.getText());
+     v.setRua(jTFRua.getText());
       if(jRBObliqua.isSelected()){
           v.setObliqua(true);
       }else if(jRBParalela.isSelected()){
