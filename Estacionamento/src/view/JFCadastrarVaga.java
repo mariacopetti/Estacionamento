@@ -197,7 +197,7 @@ public class JFCadastrarVaga extends javax.swing.JFrame {
 
     private void jBtnSalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnSalvarActionPerformed
      Vaga v = new Vaga();
-     VagaDAO dao = new VagaDAO(); 
+     VagaDAO vdao = new VagaDAO(); 
      v.setNumero(Integer.parseInt(jTFNumero.getText()));
      v.setRua(jTFRua.getText());
       if(jRBObliqua.isSelected()){
@@ -205,7 +205,7 @@ public class JFCadastrarVaga extends javax.swing.JFrame {
       }else if(jRBParalela.isSelected()){
           v.setObliqua(false);
       }
-      dao.create(v);
+      vdao.update(v);
 
 
 // TODO add your handling code here:

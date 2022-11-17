@@ -70,14 +70,14 @@ public class VagaDAO {
      Vaga v = new Vaga();
      
      try{
-             stmt = con.prepareStatement("SELECT * FROM Vaga WHERE idVaga=?");
+             stmt = con.prepareStatement("SELECT * FROM Vaga WHERE idVaga=? LIMIT 1;");
              stmt.setInt(1, idVaga);
              rs = stmt.executeQuery();
              if(rs != null && rs.next()) {
                  v.setIdVaga(rs.getInt("idVaga"));
                  v.setNumero(rs.getInt("numero"));
                  v.setRua(rs.getString("rua"));
-                 v.setObliqua(rs.getBoolean("obliquo"));
+                 v.setObliqua(rs.getBoolean("obliqua"));
              }
     
      }catch (SQLException e) {
@@ -98,6 +98,7 @@ public class VagaDAO {
             stmt.setString(2, v.getRua());
             stmt.setBoolean(3, v.isObliqua());
             stmt.setInt(4, v.getIdVaga());
+            
             stmt.executeUpdate();
             JOptionPane.showMessageDialog(null, "Vaga atualizada com sucesso!");
         }catch (SQLException e){
