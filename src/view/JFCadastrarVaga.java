@@ -32,7 +32,7 @@ public class JFCadastrarVaga extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        BGTipoVaga = new javax.swing.ButtonGroup();
+        bGTipoVaga = new javax.swing.ButtonGroup();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jTFNumero = new javax.swing.JTextField();
@@ -45,8 +45,8 @@ public class JFCadastrarVaga extends javax.swing.JFrame {
         jBtnLimpar = new javax.swing.JButton();
         jBtnSalvar = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("label");
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Cadastrar Vaga");
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel1.setText("Cadastrar Vaga");
@@ -72,7 +72,7 @@ public class JFCadastrarVaga extends javax.swing.JFrame {
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel5.setText("Tipo Vaga");
 
-        BGTipoVaga.add(jRBObliqua);
+        bGTipoVaga.add(jRBObliqua);
         jRBObliqua.setText("Obliqua");
         jRBObliqua.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -80,7 +80,7 @@ public class JFCadastrarVaga extends javax.swing.JFrame {
             }
         });
 
-        BGTipoVaga.add(jRBParalela);
+        bGTipoVaga.add(jRBParalela);
         jRBParalela.setText("Paralela");
         jRBParalela.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -188,11 +188,13 @@ public class JFCadastrarVaga extends javax.swing.JFrame {
     }//GEN-LAST:event_jTFRuaActionPerformed
 
     private void jBtnLimparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnLimparActionPerformed
-        // TODO add your handling code here:
+        jTFRua.setText("");
+       jTFNumero.setText("");
+       bGTipoVaga.clearSelection();       // TODO add your handling code here:
     }//GEN-LAST:event_jBtnLimparActionPerformed
 
     private void jBtnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnCancelarActionPerformed
-        // TODO add your handling code here:
+       dispose(); // TODO add your handling code here:
     }//GEN-LAST:event_jBtnCancelarActionPerformed
 
     private void jBtnSalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnSalvarActionPerformed
@@ -248,7 +250,7 @@ public class JFCadastrarVaga extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.ButtonGroup BGTipoVaga;
+    private javax.swing.ButtonGroup bGTipoVaga;
     private javax.swing.JButton jBtnCancelar;
     private javax.swing.JButton jBtnLimpar;
     private javax.swing.JButton jBtnSalvar;

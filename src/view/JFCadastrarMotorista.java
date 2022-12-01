@@ -31,77 +31,97 @@ public class JFCadastrarMotorista extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        jTFNome = new javax.swing.JLabel();
-        jTFGenero = new javax.swing.JLabel();
-        jTFRG = new javax.swing.JLabel();
-        jTFCPF = new javax.swing.JLabel();
-        jTFCelular = new javax.swing.JLabel();
-        jTFEmail = new javax.swing.JLabel();
-        jTFSenha = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
-        jTextField7 = new javax.swing.JTextField();
-        jTextField8 = new javax.swing.JTextField();
+        jTFNomee = new javax.swing.JLabel();
+        jTFGeneroo = new javax.swing.JLabel();
+        jTFRGf = new javax.swing.JLabel();
+        jTFCPFg = new javax.swing.JLabel();
+        jTFCelularr = new javax.swing.JLabel();
+        jTFEmaill = new javax.swing.JLabel();
+        jTFSenhaa = new javax.swing.JLabel();
+        jTFGenero = new javax.swing.JTextField();
+        jTFNome = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
+        jTFRG = new javax.swing.JTextField();
+        jTFCelular = new javax.swing.JTextField();
+        jTFEmail = new javax.swing.JTextField();
+        jTFSenha = new javax.swing.JTextField();
+        jTFCPF = new javax.swing.JTextField();
         jBtnSalvar = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Cadastrar Motorista");
 
+        jLabel1.setDisplayedMnemonic('C');
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel1.setText("Cadastrar Motorista");
 
-        jTFNome.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jTFNome.setText("Nome Completo");
+        jTFNomee.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jTFNomee.setText("Nome Completo");
+
+        jTFGeneroo.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jTFGeneroo.setText("Gênero");
+
+        jTFRGf.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jTFRGf.setText("RG");
+
+        jTFCPFg.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jTFCPFg.setText("CPF");
+
+        jTFCelularr.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jTFCelularr.setText("Celular");
+
+        jTFEmaill.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jTFEmaill.setText("E-mail");
+
+        jTFSenhaa.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jTFSenhaa.setText("Senha");
 
         jTFGenero.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jTFGenero.setText("Gênero");
 
-        jTFRG.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jTFRG.setText("RG");
+        jTFNome.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
 
-        jTFCPF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jTFCPF.setText("CPF");
-
-        jTFCelular.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jTFCelular.setText("Celular");
-
-        jTFEmail.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jTFEmail.setText("E-mail");
-
-        jTFSenha.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jTFSenha.setText("Senha");
-
-        jTextField1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-
-        jTextField2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-
-        jTextField4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-
-        jTextField5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-
-        jTextField6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-
-        jTextField7.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jTextField7.addActionListener(new java.awt.event.ActionListener() {
+        jButton1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jButton1.setText("Limpar");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField7ActionPerformed(evt);
+                jButton1ActionPerformed(evt);
             }
         });
 
-        jTextField8.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jTextField8.addActionListener(new java.awt.event.ActionListener() {
+        jTFRG.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+
+        jTFCelular.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+
+        jTFEmail.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+
+        jTFSenha.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jTFSenha.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField8ActionPerformed(evt);
+                jTFSenhaActionPerformed(evt);
+            }
+        });
+
+        jTFCPF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jTFCPF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTFCPFActionPerformed(evt);
             }
         });
 
         jBtnSalvar.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jBtnSalvar.setText("Salvar Motorista");
+        jBtnSalvar.setText("Salvar ");
         jBtnSalvar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBtnSalvarActionPerformed(evt);
+            }
+        });
+
+        jButton2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jButton2.setText("Cancelar");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
             }
         });
 
@@ -116,29 +136,33 @@ public class JFCadastrarMotorista extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jLabel1)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jTFNome)
+                                .addComponent(jTFNomee)
                                 .addGap(18, 18, 18)
-                                .addComponent(jTextField2))
+                                .addComponent(jTFNome))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jTFCelular)
-                                    .addComponent(jTFEmail)
-                                    .addComponent(jTFSenha)
-                                    .addComponent(jTFCPF)
-                                    .addComponent(jTFRG)
-                                    .addComponent(jTFGenero))
+                                    .addComponent(jTFCelularr)
+                                    .addComponent(jTFEmaill)
+                                    .addComponent(jTFSenhaa)
+                                    .addComponent(jTFCPFg)
+                                    .addComponent(jTFRGf)
+                                    .addComponent(jTFGeneroo))
                                 .addGap(27, 27, 27)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                    .addComponent(jTFGenero, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jTFRG, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jTFCPF, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jTFCelular, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jTFEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jTFSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(114, 114, 114)
-                        .addComponent(jBtnSalvar)))
-                .addContainerGap(169, Short.MAX_VALUE))
+                        .addGap(23, 23, 23)
+                        .addComponent(jButton2)
+                        .addGap(31, 31, 31)
+                        .addComponent(jBtnSalvar)
+                        .addGap(31, 31, 31)
+                        .addComponent(jButton1)))
+                .addContainerGap(43, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -147,51 +171,54 @@ public class JFCadastrarMotorista extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addGap(33, 33, 33)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTFNome)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTFNomee)
+                    .addComponent(jTFNome, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTFGenero)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTFGeneroo)
+                    .addComponent(jTFGenero, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTFRG)
-                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTFRGf)
+                    .addComponent(jTFRG, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTFCPF)
-                    .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTFCPFg)
+                    .addComponent(jTFCPF, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTFCelular)
-                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTFCelularr)
+                    .addComponent(jTFCelular, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTFEmail)
-                    .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTFEmaill)
+                    .addComponent(jTFEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTFSenha)
-                    .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTFSenhaa)
+                    .addComponent(jTFSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 14, Short.MAX_VALUE)
-                .addComponent(jBtnSalvar)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jBtnSalvar)
+                    .addComponent(jButton1)
+                    .addComponent(jButton2))
                 .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
                                         
-    private void jTextField7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField7ActionPerformed
+    private void jTFSenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTFSenhaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField7ActionPerformed
+    }//GEN-LAST:event_jTFSenhaActionPerformed
 
-    private void jTextField8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField8ActionPerformed
+    private void jTFCPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTFCPFActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField8ActionPerformed
+    }//GEN-LAST:event_jTFCPFActionPerformed
 
     private void jBtnSalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnSalvarActionPerformed
     Motorista m = new Motorista();
-    Motorista dao = new Motorista(); 
+    MotoristaDAO dao = new MotoristaDAO(); 
     m.setNomeCompleto(jTFNome.getText());
     m.setGenero(jTFGenero.getText());
     m.setRG(Integer.parseInt(jTFRG.getText()));
@@ -202,6 +229,14 @@ public class JFCadastrarMotorista extends javax.swing.JFrame {
       
       dao.create(m);
     }//GEN-LAST:event_jBtnSalvarActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+                 // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -240,20 +275,22 @@ public class JFCadastrarMotorista extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jBtnSalvar;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jTFCPF;
-    private javax.swing.JLabel jTFCelular;
-    private javax.swing.JLabel jTFEmail;
-    private javax.swing.JLabel jTFGenero;
-    private javax.swing.JLabel jTFNome;
-    private javax.swing.JLabel jTFRG;
-    private javax.swing.JLabel jTFSenha;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
+    private javax.swing.JTextField jTFCPF;
+    private javax.swing.JLabel jTFCPFg;
+    private javax.swing.JTextField jTFCelular;
+    private javax.swing.JLabel jTFCelularr;
+    private javax.swing.JTextField jTFEmail;
+    private javax.swing.JLabel jTFEmaill;
+    private javax.swing.JTextField jTFGenero;
+    private javax.swing.JLabel jTFGeneroo;
+    private javax.swing.JTextField jTFNome;
+    private javax.swing.JLabel jTFNomee;
+    private javax.swing.JTextField jTFRG;
+    private javax.swing.JLabel jTFRGf;
+    private javax.swing.JTextField jTFSenha;
+    private javax.swing.JLabel jTFSenhaa;
     // End of variables declaration//GEN-END:variables
 }

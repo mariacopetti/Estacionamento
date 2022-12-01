@@ -51,7 +51,8 @@ public class JFAtualizarMotorista extends javax.swing.JFrame {
         jTFNome = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Atualizar Motorista");
 
         jTFGenero.setBackground(new java.awt.Color(204, 204, 204));
 
@@ -60,6 +61,11 @@ public class JFAtualizarMotorista extends javax.swing.JFrame {
         jTFCpf.setBackground(new java.awt.Color(204, 204, 204));
 
         jTFCelular.setBackground(new java.awt.Color(204, 204, 204));
+        jTFCelular.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTFCelularActionPerformed(evt);
+            }
+        });
 
         jTFEmail.setBackground(new java.awt.Color(204, 204, 204));
 
@@ -72,9 +78,19 @@ public class JFAtualizarMotorista extends javax.swing.JFrame {
 
         jBtnCancelar.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jBtnCancelar.setText("Cancelar");
+        jBtnCancelar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnCancelarActionPerformed(evt);
+            }
+        });
 
         jBtnLimpar.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jBtnLimpar.setText("Limpar");
+        jBtnLimpar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnLimparActionPerformed(evt);
+            }
+        });
 
         jBtnSalvar.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jBtnSalvar.setText("Salvar");
@@ -231,6 +247,25 @@ public class JFAtualizarMotorista extends javax.swing.JFrame {
     private void jPFSenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPFSenhaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jPFSenhaActionPerformed
+
+    private void jBtnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnCancelarActionPerformed
+       dispose(); // TODO add your handling code here:
+    }//GEN-LAST:event_jBtnCancelarActionPerformed
+
+    private void jBtnLimparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnLimparActionPerformed
+      jTFNome.setText("");
+      jTFGenero.setText("");
+      jTFRg.setText("");
+      jTFCpf.setText("");
+      jTFCelular.setText("");
+      jTFEmail.setText("");
+      jPFSenha.setText("");
+// TODO add your handling code here:
+    }//GEN-LAST:event_jBtnLimparActionPerformed
+
+    private void jTFCelularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTFCelularActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTFCelularActionPerformed
 
     /**
      * @param args the command line arguments

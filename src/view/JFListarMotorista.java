@@ -39,6 +39,7 @@ public class JFListarMotorista extends javax.swing.JFrame {
         jTMotorista = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Listar Motoristas");
 
         jLabel1.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
         jLabel1.setText("Listar Motoristas");
@@ -134,7 +135,8 @@ public class JFListarMotorista extends javax.swing.JFrame {
     }//GEN-LAST:event_jBtnExcluirActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+       JFCadastrarMotorista cv = new JFCadastrarMotorista(); 
+       cv.setVisible(true);        // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jTMotoristaVetoableChange(java.beans.PropertyChangeEvent evt)throws java.beans.PropertyVetoException {//GEN-FIRST:event_jTMotoristaVetoableChange
